@@ -17,7 +17,7 @@ expo init ShoppingList
 
 ## React Native CLI Quickstart
 
-- [Chochlately](https://chocolatey.org/)
+### Shep 1 : [Chochlately](https://chocolatey.org/)
 
 ```sh
 // 관리자 권한으로 powershell 실행
@@ -30,36 +30,30 @@ choco -v
 choco install -y nodejs.install python2 jdk8
 ```
 
+### Step 2 : [Android development environment](https://developer.android.com/studio)
+
 # react native
 
-react is a js library/framework for creating UIs
+- react is a js library/framework for creating UIs
 
-react is agnostic(불가지론). react-dom is used to
-render in the browser(web app)
+- react is agnostic(불가지론: 의식에 주어지는 감각적 경험만이 인식되고, 그 배후에 있는 사물의 본질이나 실재 그 자체는 인식할 수 없다는 설).
+- react-dom is used to render in the browser(web app)
 
-react native is a library that can complie react components
-into native component/widgets
+- react native is a library that can complie react components into native component/widgets
 
-react native allows us to use react to create native iOS &
-android applications
+- react native allows us to use react to create native iOS & android applications
 
---
-single codebase
+## **single codebase**
 
-usually, an iOS app and android app are completely separate
-apps(swift vs java/kotlin)
+- usually, an iOS app and android app are completely separate apps(swift vs java/kotlin)with react native
 
-with react native, wecan create one single codebase and build
-for both platforms
+- we can create one single codebase and build for both platforms this saves a TON of time and money
 
-this saves a TON of time and money
+## requirements
 
---
-requirements
+windows - android : android studio / sdk / emulator(avd)
 
-## windows - android : android studio / sdk / emulator(avd)
-
-components
+## components
 
 - react native includes built in components and APIs
 - basic components: view, text, image, textinput, scrollview,stylesheet
