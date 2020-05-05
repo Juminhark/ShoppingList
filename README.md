@@ -15,11 +15,22 @@ expo init ShoppingList
 - yarn web
 ```
 
----
+## React Native CLI Quickstart
 
-# ShoppingList
+- [Chochlately](https://chocolatey.org/)
 
-what is react native?
+```sh
+// 관리자 권한으로 powershell 실행
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+// 설치 확인
+choco -v
+
+// Node, Python2, JDK
+choco install -y nodejs.install python2 jdk8
+```
+
+# react native
 
 react is a js library/framework for creating UIs
 
@@ -50,37 +61,40 @@ requirements
 
 components
 
-react native includes built in components and APIs
-basic components: view, text, image, textinput, scrollview,stylesheet
-ui: button, picker,slider,switch
-list views: flatlist, sectionlist
-android: backhandler, datepickerandroid
+- react native includes built in components and APIs
+- basic components: view, text, image, textinput, scrollview,stylesheet
+- ui: button, picker,slider,switch
+- list views: flatlist, sectionlist
+- android: backhandler, datepickerandroid
 
---
-android studio
+### android studio
 
-configure > sdk manager > android 10.0(q)
-configure > avd manager > create virtual device > pixel 2(android 10.0)
+- configure > sdk manager > android 10.0(q)
+- configure > avd manager > create virtual device > pixel 2(android 10.0)
 
-path 설정
-내 pc > 속성 > 고급 시스템 설정 > 환경변수
-변수 이름 : ANDROID_HOME
-변수 값 : C:\Users\rlfrl\AppData\Local\Android\Sdk
---
-initialize
-C:\DEV > npm i -g react-native-cli
-C:\DEV > react-native init ShoppingList
+### path 설정
 
-> cd ShoppingList
-> code . (vsc 열기)
-> npm i react-native-vector-icons
-> react-native link react-native-vector-icons
-> npm i uuidv4
+- 내 pc > 속성 > 고급 시스템 설정 > 환경변수
+- 변수 이름 : ANDROID_HOME
+- 변수 값 : C:\Users\rlfrl\AppData\Local\Android\Sdk
 
-android studio : https://developer.android.com/studio?hl=ko
-react-native : https://facebook.github.io/react-native/docs/view
-uuidv4 : https://www.npmjs.com/package/uuidv4
-flatlist api : https://facebook.github.io/react-native/docs/flatlist
+### initialize
+
+```sh
+npm i -g react-native-cli
+react-native init ShoppingList
+
+cd ShoppingList
+code . (vsc 열기)
+npm i react-native-vector-icons
+react-native link react-native-vector-icons
+npm i uuidv4
+```
+
+- [android studio](https://developer.android.com/studio?hl=ko)
+- [react-native](https://facebook.github.io/react-native/docs/view)
+- [uuidv4](https://www.npmjs.com/package/uuidv4)
+- [flatlist api](https://facebook.github.io/react-native/docs/flatlist)
 
 ### start
 
