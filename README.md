@@ -1,37 +1,3 @@
-## Expo CLI Quickstart
-
-```sh
-npm install -g expo-cli
-
-expo init ShoppingList
-
-? Choose a template: expo-template-blank
-
-- cd ShoppingList
-- yarn start
-
-- yarn android
-- yarn ios # requires an iOS device or macOS for access to an iOS simulator
-- yarn web
-```
-
-## React Native CLI Quickstart
-
-### Shep 1 : [Chochlately](https://chocolatey.org/)
-
-```sh
-// 관리자 권한으로 powershell 실행
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-// 설치 확인
-choco -v
-
-// Node, Python2, JDK
-choco install -y nodejs.install python2 jdk8
-```
-
-### Step 2 : [Android development environment](https://developer.android.com/studio)
-
 # react native
 
 - react is a js library/framework for creating UIs
@@ -61,6 +27,34 @@ windows - android : android studio / sdk / emulator(avd)
 - list views: flatlist, sectionlist
 - android: backhandler, datepickerandroid
 
+# Setting up the development environment
+
+- Expo-CLI
+- React-Native-CLI
+
+## React Native CLI Quickstart
+
+### Shep 1 : [Chochlately](https://chocolatey.org/)
+
+```sh
+// 관리자 권한으로 powershell 실행
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+// 설치 확인
+choco -v
+
+// Node, Python2, JDK
+choco install -y nodejs.install python2 jdk8
+```
+
+### Step 2 : [Android development environment](https://developer.android.com/studio)
+
+- 1. Install Android Studio
+- 2. Install the Android SDK : Android 9 (Pie)
+- 3. SDK Tools tab > Android SDK Build-Tools 28.0.3
+- 4. Configure the ANDROID_HOME environment variable
+- 5. Add platform-tools to Path
+
 ### android studio
 
 - configure > sdk manager > android 10.0(q)
@@ -72,28 +66,37 @@ windows - android : android studio / sdk / emulator(avd)
 - 변수 이름 : ANDROID_HOME
 - 변수 값 : C:\Users\rlfrl\AppData\Local\Android\Sdk
 
-### initialize
+* 변수 이름 : Path
+* 변수 값 : %ANDROID_HOME%\tools
+* 변수 값 : %ANDROID_HOME%\tools\bin
+* 변수 값 : %ANDROID_HOME%\platform-tools
+
+### Step 3 : Creating a new application
 
 ```sh
-npm i -g react-native-cli
-react-native init ShoppingList
+npx react-native init NativeShoppingList
 
-cd ShoppingList
-code . (vsc 열기)
-npm i react-native-vector-icons
-react-native link react-native-vector-icons
-npm i uuidv4
-```
+cd  NativeShoppingList
 
-- [android studio](https://developer.android.com/studio?hl=ko)
-- [react-native](https://facebook.github.io/react-native/docs/view)
-- [uuidv4](https://www.npmjs.com/package/uuidv4)
-- [flatlist api](https://facebook.github.io/react-native/docs/flatlist)
-
-### start
-
-```sh
 npx react-native start
 
 npx react-native run-android
+```
+
+## Expo CLI Quickstart
+
+```sh
+npm install -g expo-cli
+
+expo init ExpoShoppingList
+
+cd ExpoShoppingList
+
+yarn start
+
+// another terminal
+- yarn android
+- yarn ios
+- yarn web
+
 ```
