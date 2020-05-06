@@ -1,19 +1,10 @@
-# react native
+# [React Native v0.62](https://reactnative.dev/)
 
-- react is a js library/framework for creating UIs
+* [Traversy Media - React Native Crash Course 2020](https://www.youtube.com/watch?v=Hf4MJH0jDb4)
 
-- react is agnostic(불가지론: 의식에 주어지는 감각적 경험만이 인식되고, 그 배후에 있는 사물의 본질이나 실재 그 자체는 인식할 수 없다는 설).
-- react-dom is used to render in the browser(web app)
+## react native
 
-- react native is a library that can complie react components into native component/widgets
-
-- react native allows us to use react to create native iOS & android applications
-
-## **single codebase**
-
-- usually, an iOS app and android app are completely separate apps(swift vs java/kotlin)with react native
-
-- we can create one single codebase and build for both platforms this saves a TON of time and money
+- [react-native vs flutter](https://www.youtube.com/watch?v=siow15Yn8r8)
 
 ## requirements
 
@@ -100,3 +91,5 @@ yarn start
 - yarn web
 
 ```
+
+### 
