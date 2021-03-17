@@ -1,22 +1,14 @@
-# [React Native v0.62](https://reactnative.dev/)
+# [React Native](https://reactnative.dev/)
 
-* [Traversy Media - React Native Crash Course 2020](https://www.youtube.com/watch?v=Hf4MJH0jDb4)
+## reference
 
-## react native
-
-- [react-native vs flutter](https://www.youtube.com/watch?v=siow15Yn8r8)
+- [react native tutorial](https://reactnative.dev/docs/tutorial)
+- [Traversy Media - React Native Crash Course 2020](https://www.youtube.com/watch?v=Hf4MJH0jDb4)
+- [Nomad Coders - react-native vs flutter](https://www.youtube.com/watch?v=siow15Yn8r8)
 
 ## requirements
 
 windows - android : android studio / sdk / emulator(avd)
-
-## components
-
-- react native includes built in components and APIs
-- basic components: view, text, image, textinput, scrollview,stylesheet
-- ui: button, picker,slider,switch
-- list views: flatlist, sectionlist
-- android: backhandler, datepickerandroid
 
 # Setting up the development environment
 
@@ -57,17 +49,17 @@ choco install -y nodejs.install python2 jdk8
 - 변수 이름 : ANDROID_HOME
 - 변수 값 : C:\Users\rlfrl\AppData\Local\Android\Sdk
 
-* 변수 이름 : Path
-* 변수 값 : %ANDROID_HOME%\tools
-* 변수 값 : %ANDROID_HOME%\tools\bin
-* 변수 값 : %ANDROID_HOME%\platform-tools
+- 변수 이름 : Path
+- 변수 값 : %ANDROID_HOME%\tools
+- 변수 값 : %ANDROID_HOME%\tools\bin
+- 변수 값 : %ANDROID_HOME%\platform-tools
 
 ### Step 3 : Creating a new application
 
 ```sh
-npx react-native init NativeShoppingList
+npx react-native init sample
 
-cd  NativeShoppingList
+cd sample
 
 npx react-native start
 
@@ -79,9 +71,9 @@ npx react-native run-android
 ```sh
 npm install -g expo-cli
 
-expo init ExpoShoppingList
+expo init sample
 
-cd ExpoShoppingList
+cd sample
 
 yarn start
 
@@ -92,4 +84,18 @@ yarn start
 
 ```
 
-### 
+## Basics
+
+### components
+
+- react native includes built in components and APIs
+- basic components: view, text, image, textinput, scrollview,stylesheet
+- ui: button, picker,slider,switch
+- list views: flatlist, sectionlist
+- android: backhandler, datepickerandroid
+
+## Props
+
+## State
+
+## Navigation
