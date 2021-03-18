@@ -7,6 +7,7 @@ const Stack = createStackNavigator();
 
 import HomeScreen from '../screens/HomeScreen';
 import ListScreen from '../screens/ListScreen';
+import ShoppingScreen from '../screens/ShoppingScreen';
 
 const RootNavigator = props => {
   return (
@@ -14,6 +15,7 @@ const RootNavigator = props => {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="List" component={ListScreen} />
+        <Stack.Screen name="Shopping" component={ShoppingScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

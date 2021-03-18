@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, FlatList, Alert} from 'react-native';
-import Header from './components/Header';
-import ListItem from './components/ListItem';
-import AddItem from './components/AddItem';
+import {View, FlatList, Alert} from 'react-native';
 import uuid from 'react-native-uuid';
 
-const App = () => {
+import styles from './styles';
+
+import Header from '../../components/Header';
+import ListItem from '../../components/ListItem';
+import AddItem from '../../components/AddItem';
+
+const ShoppingScreen = () => {
   const [items, setItems] = useState([
     {id: uuid.v4(), text: 'Milk'},
     {id: uuid.v4(), text: 'Eggs'},
@@ -52,10 +55,4 @@ const App = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-export default App;
+export default ShoppingScreen;

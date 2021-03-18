@@ -14,6 +14,10 @@ const nameData = [
   {key: 'Jillian'},
   {key: 'Jimmy'},
   {key: 'Julie'},
+  {key: 'aass'},
+  {key: 'dd'},
+  {key: 'ss'},
+  {key: 'aa'},
 ];
 
 const ListScreen = props => {
